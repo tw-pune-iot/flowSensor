@@ -4,13 +4,10 @@ Water Flow Sensor output processed to read in litres/hour
 Adaptation Courtesy: www.hobbytronics.co.uk
 */
 volatile int flow_frequency; // Measures flow sensor pulses
-float l_hour; // Calculated litres/hour
-float l_min;
 float l_sec;
 unsigned char flowsensor = 2; // Sensor Input
 unsigned long currentTime;
 unsigned long cloopTime;
-volatile byte state = LOW;
 unsigned long prev_high_time;
 unsigned long cur_high_state_time;
 unsigned long start_time;
